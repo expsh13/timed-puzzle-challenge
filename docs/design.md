@@ -148,6 +148,21 @@ type UserProfile = {
 
 ```
 app/
+├── lib/ (ユーティリティ関数)
+    ├── types.ts (型定義)
+    ├── puzzles.ts (謎解きデータ)
+    ├── timer.ts (タイマー機能)
+    └── storage.ts (ローカルストレージ)
+├──components/ (再利用可能なコンポーネント)
+    ├── ui/ (UIコンポーネント)
+    │   ├── Button.tsx
+    │   ├── Card.tsx
+    │   └── ...
+    ├── Timer.tsx (タイマーコンポーネント)
+    ├── PuzzleCard.tsx (謎解きカード)
+    ├── HintBox.tsx (ヒント表示)
+    ├── AnswerInput.tsx (解答入力)
+    └── ProgressBar.tsx (進捗表示)
 ├── page.tsx (ホームページ)
 ├── layout.tsx (共通レイアウト)
 ├── globals.css (グローバルスタイル)
@@ -166,23 +181,6 @@ app/
 │   └── page.tsx
 └── api/ (APIルート)
     └── ...
-
-lib/ (ユーティリティ関数)
-├── types.ts (型定義)
-├── puzzles.ts (謎解きデータ)
-├── timer.ts (タイマー機能)
-└── storage.ts (ローカルストレージ)
-
-components/ (再利用可能なコンポーネント)
-├── ui/ (UIコンポーネント)
-│   ├── Button.tsx
-│   ├── Card.tsx
-│   └── ...
-├── Timer.tsx (タイマーコンポーネント)
-├── PuzzleCard.tsx (謎解きカード)
-├── HintBox.tsx (ヒント表示)
-├── AnswerInput.tsx (解答入力)
-└── ProgressBar.tsx (進捗表示)
 
 public/ (静的ファイル)
 ├── images/
