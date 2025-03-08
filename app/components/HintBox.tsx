@@ -6,7 +6,7 @@ import Button from "./ui/Button";
 
 type HintBoxProps = {
   hints: Hint[];
-  onUseHint: (hintId: string, penaltyTime: number) => void;
+  onUseHint: (hintId: string) => void;
   usedHintIds: string[];
   className?: string;
 };
@@ -38,7 +38,7 @@ export default function HintBox({
     );
 
     if (confirmed) {
-      onUseHint(hint.id, hint.penaltyTime);
+      onUseHint(hint.id);
       setExpandedHintId(hint.id);
     }
   };
